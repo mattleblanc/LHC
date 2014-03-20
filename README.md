@@ -1,3 +1,11 @@
+MEL: Changing the particles so that they're actually mass-ordered, beginning at the electron and increasing up to the Higgs. Omitting the neutrinos, since (a) we don't know their mass ordering and (b) it fits nicely this way. Sadly, there is no room for the top ... but it's heavier than the Higgs anyway, so that seems fine to me.
+
+Play this version here: http://mattleblanc.github.io/LHC
+
+Older README files retained below.
+
+---
+
 Just for these who like physics to have fun.
 
 Forked from gabrielecirulli's 2048.
