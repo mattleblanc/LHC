@@ -2,13 +2,17 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
-  color: #776e65;
+  background: #000000;
+  background-image:url('lhc_bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #ffffff;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
 
 body {
-  margin: 80px 0; }
+  margin: 0px 0; }
 
 .heading:after {
   content: "";
@@ -20,6 +24,7 @@ h1.title {
   font-weight: bold;
   margin: 0;
   display: block;
+  color: #3861aa;
   float: left; }
 
 @-webkit-keyframes move-up {
@@ -56,7 +61,7 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: #3861aa;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
@@ -104,17 +109,18 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #776e65;
+    color: #3861aa;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
 
 strong.important {
+    color: #3861aa;
   text-transform: uppercase; }
 
 hr {
   border: none;
-  border-bottom: 1px solid #d8d4d0;
+  border-bottom: 1px solid #ffffff;
   margin-top: 20px;
   margin-bottom: 30px; }
 
@@ -151,7 +157,7 @@ hr {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  background: #bbada0;
+  background: #3d4c66;
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -166,7 +172,7 @@ hr {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(238, 228, 218, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 100;
     text-align: center;
     -webkit-animation: fade-in 800ms ease 1200ms;
@@ -186,19 +192,19 @@ hr {
       margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      background: #8f7a66;
+      background: #ffffff;
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
-      color: #f9f6f2;
+      color: #005eff;
       height: 40px;
       line-height: 42px;
       margin-left: 9px; }
       .game-container .game-message a.keep-playing-button {
         display: none; }
     .game-container .game-message.game-won {
-      background: rgba(237, 194, 46, 0.5);
-      color: #f9f6f2; }
+        background: #ffffff;
+      color: #000000; }
       .game-container .game-message.game-won a.keep-playing-button {
         display: inline-block; }
     .game-container .game-message.game-won, .game-container .game-message.game-over {
@@ -301,64 +307,59 @@ hr {
   transform: translate(363px, 363px); }
 
 .tile {
-  position: absolute;
-  -webkit-transition: 100ms ease-in-out;
-  -moz-transition: 100ms ease-in-out;
-  transition: 100ms ease-in-out;
-  -webkit-transition-property: -webkit-transform;
-  -moz-transition-property: -moz-transform;
-  transition-property: transform; }
-  .tile .tile-inner {
+    position: absolute;
+    -webkit-transition: 100ms ease-in-out;
+    -moz-transition: 100ms ease-in-out;
+    transition: 100ms ease-in-out;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    transition-property: transform; }
+.tile .tile-inner {
     border-radius: 3px;
-    background: #eee4da;
+    background: #ffffff;
     text-align: center;
-    font-weight: bold;
+    
     z-index: 10;
-    font-size: 12px; }
-  .tile.tile-2 .tile-inner {
-    background: #eee4da;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
-  .tile.tile-4 .tile-inner {
-    background: #ede0c8;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
-  .tile.tile-8 .tile-inner {
-    color: #f9f6f2;
-    background: #f2b179; }
-  .tile.tile-16 .tile-inner {
-    color: #f9f6f2;
-    background: #f59563; }
-  .tile.tile-32 .tile-inner {
-    color: #f9f6f2;
-    background: #f67c5f; }
-  .tile.tile-64 .tile-inner {
-    color: #f9f6f2;
-    background: #f65e3b; }
-  .tile.tile-128 .tile-inner {
-    color: #f9f6f2;
-    background: #edcf72;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286); }
-  .tile.tile-256 .tile-inner {
-    color: #f9f6f2;
-    background: #edcc61;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048); }
-  .tile.tile-512 .tile-inner {
-    color: #f9f6f2;
-    background: #edc850;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381); }
-  .tile.tile-1024 .tile-inner {
-    color: #f9f6f2;
-    background: #edc53f;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571); }
-  .tile.tile-2048 .tile-inner {
-    color: #f9f6f2;
-    background: #edc22e;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333); }
-  .tile.tile-super .tile-inner {
-    color: #f9f6f2;
-    background: #3c3a32;
+    font-size: 16px; }
+.tile.tile-2 .tile-inner{
+    color: #ffffff;
+    background: #000000; }
+.tile.tile-4 .tile-inner {
+    color: #ffffff;
+    background: #333333; }
+.tile.tile-8 .tile-inner {
+    color: #ffffff;
+    background: #666666; }
+.tile.tile-16 .tile-inner {
+    color: #ffffff;
+    background: #999999; }
+.tile.tile-32 .tile-inner {
+    color: #000000;
+    background: #cccccc; }
+.tile.tile-64 .tile-inner {
+    color: #000000;
+    background: #99beff; }
+.tile.tile-128 .tile-inner {
+    color: #ffffff;
+    background: #4d8eff; }
+.tile.tile-256 .tile-inner {
+    color: #ffffff;
+    background: #669eff; }
+.tile.tile-512 .tile-inner {
+    color: #ffffff;
+    background: #337eff; }
+.tile.tile-1024 .tile-inner {
+    color: #ffffff;
+    background: #1a6eff; }
+.tile.tile-2048 .tile-inner {
+    color: #ffffff;
+    background: #005eff; }
+.tile.tile-super .tile-inner {
+    color: #ffffff;
+    background: #3861aa;
     font-size: 30px; }
-    @media screen and (max-width: 520px) {
-      .tile.tile-super .tile-inner {
+@media screen and (max-width: 520px) {
+    .tile.tile-super .tile-inner {
         font-size: 10px; } }
 
 @-webkit-keyframes appear {
