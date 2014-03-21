@@ -71,8 +71,8 @@ HTMLActuator.prototype.addTile = function (tile) {
   outputtext[6] = "charm";
   outputtext[7] = "tau";
   outputtext[8] = "bottom";
-  outputtext[9] = "Z";
-  outputtext[10] = "W";
+  outputtext[9] = "W";
+  outputtext[10] = "Z";
   outputtext[11] = "Higgs";
 
 
