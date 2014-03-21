@@ -63,17 +63,17 @@ HTMLActuator.prototype.addTile = function (tile) {
 
   var outputtext = new Array();
   outputtext[0] = "";
-  outputtext[1] = "electron";
-  outputtext[2] = "up";
-  outputtext[3] = "down";
-  outputtext[4] = "strange";
-  outputtext[5] = "muon";
-  outputtext[6] = "charm";
-  outputtext[7] = "tau";
-  outputtext[8] = "bottom";
-  outputtext[9] = "W";
-  outputtext[10] = "Z";
-  outputtext[11] = "Higgs";
+  outputtext[1] = "electron (0.5)";
+  outputtext[2] = "up (2)";
+  outputtext[3] = "down (5)";
+  outputtext[4] = "strange (95)";
+  outputtext[5] = "muon (106)";
+  outputtext[6] = "charm (1280)";
+  outputtext[7] = "tau (1780)";
+  outputtext[8] = "bottom (4180)";
+  outputtext[9] = "W (80,400)";
+  outputtext[10] = "Z (91,200)";
+  outputtext[11] = "Higgs (126,000)";
 
 
   inner.classList.add("tile-inner");
